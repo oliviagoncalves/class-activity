@@ -1,0 +1,45 @@
+h1{
+color:blue;
+border: 50px dashed chartreuse;
+font-size: 50px;
+}
+
+.static {
+    position:static;
+    width:30%;
+    padding:30px;
+
+}
+
+.relative {
+    position:relative;
+    left:100px;
+    width:100w;
+}
+
+.fixed{
+    position:fixed;
+    width:50%;
+    bottom:0;
+    right:0;
+}
+
+.absolute{
+    position:absolute;
+    top:80px;
+    left:300px;
+}
+
+.sticky{
+    position:sticky;
+    top:0;
+}
+
+ul li{ 
+    color:aqua;
+    font-size: 40px; 
+ }
+
+ div{
+    background: red
+ }

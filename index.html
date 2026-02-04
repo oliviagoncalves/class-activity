@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jan 28 in-class activity</title>
+    <style>
+        body{
+            background-image: url('208352.gif');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+        .card {
+            position: relative;
+            height: 500px;
+            background: black;
+            border-radius: 105px;
+            box-shadow: 0 4px 10px rgba(255, 13, 0, 0.662);
+            cursor: pointer;
+            overflow: hidden;
+            /* rotate: 10deg; */
+        }
+
+        .card:hover{
+            transform: translateY(-10px);
+            /* transform: rotate(5deg); */
+            transform: scale(1.25);
+            /* transform: scale(1.25)rotate(5deg); */
+            transition: transform 0.3s ease-out;
+            /* transform: scaleX(-1); */
+        }
+
+        .card-main{
+            padding: 30px;
+            color: beige;
+            text-align: center;
+        }
+
+        .info{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            padding: 50px;
+            color: aqua;
+            background: rgba(58, 0, 77, 1);
+            transform: translateY(100%);
+            transition: transform 0.3s ease-out;
+        }
+
+        .card:hover .info {
+            transform: translateY(0);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+    <!-- card 1 (Command+/) Start -->
+    <div class="card">
+
+        <div class="card-main">
+           <h2> This is the front! </h2>  
+           <p> This will show when someone open up your website </p>   
+        </div>
+
+        <div class="info">
+           <h3> Yay </h3>
+           <p> This will only show if you hover me!</p>
+        </div>
+
+    </div>
+    <!-- card 1 ends here -->
+
+    <!-- card 2 (Command+/) Start -->
+    <div class="card">
+
+        <div class="card-main">
+           <h2> This is the front! </h2>  
+           <p> This will show when someone open up your website </p>   
+        </div>
+
+        <div class="info">
+           <h3> Yay </h3>
+           <p> This will only show if you hover me!</p>
+        </div>
+
+    </div>
+    <!-- card 2 ends here -->
+
+    <!-- card 3 (Command+/) Start -->
+    <div class="card">
+
+        <div class="card-main">
+           <h2> This is the front! </h2>  
+           <p> This will show when someone open up your website </p>   
+        </div>
+
+        <div class="info">
+           <h3> Yay </h3>
+           <p> This will only show if you hover me!</p>
+        </div>
+
+    </div>
+    <!-- card 3 ends here -->
+</div>
+</body>
+</html>
